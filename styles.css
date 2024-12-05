@@ -243,10 +243,11 @@ footer {
     background-color: rgba(255, 255, 255, 0.2);
     border: none;
     color: white;
-    font-size: 2rem;
-    padding: 10px 20px;
+    font-size: 1.5rem; /* Reduce font size */
+    padding: 5px 15px; /* Reduce padding */
     cursor: pointer;
     transition: background-color 0.3s;
+    z-index: 2; /* Ensure it is above other elements */
 }
 
 .modal-nav:hover {
@@ -254,15 +255,15 @@ footer {
 }
 
 #prev {
-    position: absolute;
-    left: 10px;
+    position: fixed; /* Change to fixed position */
+    left: 20px; /* Move further outside the modal wrapper */
     top: 50%;
     transform: translateY(-50%);
 }
 
 #next {
-    position: absolute;
-    right: 10px;
+    position: fixed; /* Change to fixed position */
+    right: 20px; /* Move further outside the modal wrapper */
     top: 50%;
     transform: translateY(-50%);
 }
