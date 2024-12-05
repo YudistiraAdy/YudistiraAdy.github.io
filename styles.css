@@ -183,8 +183,8 @@ footer {
 
 .modal-content, #modal-video {
     margin: 10px;
-    max-width: 80%; /* Increase to 80% of the available width */
-    max-height: 80vh; /* Increase to 80% of the viewport height */
+    max-width: 90%; /* Increase to 80% of the available width */
+    max-height: 90vh; /* Increase to 80% of the viewport height */
     object-fit: contain; /* Maintain aspect ratio */
 }
 
@@ -196,7 +196,7 @@ footer {
 
 .modal-text {
     flex: 1; /* Allow text to take the remaining space */
-    margin-left: 20px; /* Add space between media and text */
+    margin-left: 5px; /* Add space between media and text */
     text-align: left; /* Align text to the left */
 }
 
