@@ -180,19 +180,20 @@ footer {
     transform: translate(-50%, -50%); /* Offset by 50% of its size */
 }
 
-.modal-media {
-    width: 100%; /* Take full width */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .modal-content, #modal-video {
     margin: 10px;
     width: 100%;
     max-width: 600px;
     max-height: 70vh; /* Ensure the modal content does not exceed 70% of the viewport height */
     object-fit: contain; /* Maintain aspect ratio */
+    padding-top: 80px; /* Add padding at the top to create space */
+}
+
+.modal-media {
+    width: 100%; /* Take full width */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-text {
