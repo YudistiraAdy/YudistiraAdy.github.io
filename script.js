@@ -26,6 +26,8 @@ var currentSection = "";
 // Function to open the modal with specific content
 function openModal(content, index, section) {
     modal.style.display = "block";
+    prevBtn.hidden = false;
+    nextBtn.hidden = false;
     if (content.tagName === "IMG") {
         modalImg.style.display = "block";
         modalVideo.style.display = "none";
@@ -61,6 +63,8 @@ videos.forEach((video, index) => {
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.style.display = "none";
+    prevBtn.hidden = true;
+    nextBtn.hidden = true;
     header.style.display = "block"; // Show header
 };
 
