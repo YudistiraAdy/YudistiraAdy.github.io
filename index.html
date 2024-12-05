@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>My Portfolio</h1>
+    <nav>
+        <ul>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#videos">Videos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="icon-grid">
+            <img src="Skills1.png" alt="Skill 1">
+            <img src="Skills2.png" alt="Skill 2">
+            <img src="Skills3.png" alt="Skill 3">
+            <img src="Skills4.png" alt="Skill 4">
+            <img src="Skills5.png" alt="Skill 5">
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="image-grid">
+            <img src="Project1.webp" alt="Project 1">
+            <img src="Project2.webp" alt="Project 2">
+            <img src="Project3.webp" alt="Project 3">
+            <img src="Project4.webp" alt="Project 4">
+            <img src="Project5.webp" alt="Project 5">
+        </div>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item"><img src="Porto1.webp" alt="Porto 1"></div>
+            <div class="gallery-item"><img src="Porto2.webp" alt="Porto 2"></div>
+            <div class="gallery-item"><img src="Porto3.webp" alt="Porto 3"></div>
+            <div class="gallery-item"><img src="Porto4.webp" alt="Porto 4"></div>
+            <div class="gallery-item"><img src="Porto5.webp" alt="Porto 5"></div>
+            <div class="gallery-item"><img src="Porto6.webp" alt="Porto 6"></div>
+            <div class="gallery-item"><img src="Porto7.webp" alt="Porto 7"></div>
+            <div class="gallery-item"><img src="Porto8.webp" alt="Porto 8"></div>
+            <div class="gallery-item"><img src="Porto9.webp" alt="Porto 9"></div>
+        </div>
+    </section>
+
+    <section id="videos">
+        <h2>Videos</h2>
+        <div class="video-grid">
+            <video controls><source src="Video1.webm" type="video/webm"></video>
+            <video controls><source src="Video2.webm" type="video/webm"></video>
+            <video controls><source src="Video3.webm" type="video/webm"></video>
+            <video controls><source src="Video4.webm" type="video/webm"></video>
+            <video controls><source src="Video5.webm" type="video/webm"></video>
+            <video controls><source src="Video6.webm" type="video/webm"></video>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+</footer>
+
+<div id="modal" class="modal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modal-img">
+    <video class="modal-content" id="modal-video" controls></video>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
