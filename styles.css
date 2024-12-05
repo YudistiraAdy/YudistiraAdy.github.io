@@ -195,9 +195,11 @@ footer {
 }
 
 .modal-text {
-    flex: 1; /* Allow text to take the remaining space */
-    margin-left: 5px; /* Add space between media and text */
-    text-align: left; /* Align text to the left */
+    flex: 1;
+    margin-left: 5px;
+    text-align: left;
+    width: 100%; /* Tambahkan properti ini */
+    max-width: 600px; /* Atau sesuaikan lebar maksimal sesuai kebutuhan */
 }
 
 .modal-text h2 {
