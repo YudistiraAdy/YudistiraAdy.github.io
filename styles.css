@@ -141,44 +141,50 @@ footer {
     color: white;
 }
 
-/* Modal styles */
-/* Ensure modal is hidden by default */
 #modal {
     display: none;
 }
 /* Modal styles */
-/* Modal styles */
 .modal {
     display: none; /* Hide the modal by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0; /* Start from the left edge */
-    top: 0; /* Start from the top edge */
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgba(0, 0, 0, 0.9); /* Black with opacity */
-    display: flex; /* Use flexbox for centering */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .modal-content-wrapper {
     display: flex;
-    flex-direction: row; /* Align items horizontally */
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    max-width: 90%; /* Increase to 90% of the viewport width */
-    max-height: 90%; /* Increase to 90% of the viewport height */
+    max-width: 90%;
+    max-height: 90%;
     box-sizing: border-box;
-    position: absolute; /* Use absolute positioning */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Offset by 50% of its size */
-    overflow: hidden; /* Ensure content stays within the wrapper */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.modal-text {
+    flex: 1;
+    margin-left: 5px;
+    text-align: left;
+    width: 100%;
+    max-width: none; /* Remove max-width constraint */
+    box-sizing: border-box;
 }
 
 .modal-content, #modal-video {
@@ -192,14 +198,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.modal-text {
-    flex: 1;
-    margin-left: 5px;
-    text-align: left;
-    width: 100%; /* Tambahkan properti ini */
-    max-width: 600px; /* Atau sesuaikan lebar maksimal sesuai kebutuhan */
 }
 
 .modal-text h2 {
