@@ -49,10 +49,7 @@ main {
 
 section {
     margin: 20px 0;
-}
-
-section h2 {
-    margin-bottom: 20px;
+    scroll-margin-top: 110px; /* Offset top scroll to account for sticky header */
 }
 
 /* Flex container for Gallery */
