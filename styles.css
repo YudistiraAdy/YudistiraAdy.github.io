@@ -16,6 +16,16 @@ header h1 {
     margin: 0;
 }
 
+header {
+    background-color: #1f1f1f; /* Warna gelap untuk header */
+    color: white;
+    padding: 20px 20px; /* Ubah padding untuk meningkatkan tinggi header */
+    position: -webkit-sticky; /* Untuk kompatibilitas dengan Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Pastikan header berada di atas elemen lain */
+}
+
 nav ul {
     list-style: none;
     padding: 0;
