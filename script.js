@@ -8,6 +8,12 @@ var modalVideo = document.getElementById("modal-video");
 console.log("Modal Image:", modalImg);
 console.log("Modal Video:", modalVideo);
 
+// Get the title and description elements inside the modal
+var modalTitle = document.querySelector(".modal-text h2");
+var modalDescription = document.querySelector(".modal-text p");
+console.log("Modal Title:", modalTitle);
+console.log("Modal Description:", modalDescription);
+
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 console.log("Close Button:", span);
@@ -22,6 +28,8 @@ images.forEach(img => {
         modalImg.style.display = "block";
         modalVideo.style.display = "none";
         modalImg.src = this.src;
+        modalTitle.textContent = this.getAttribute("data-title");
+        modalDescription.textContent = this.getAttribute("data-description");
     });
 });
 
@@ -35,6 +43,8 @@ videos.forEach(video => {
         modalImg.style.display = "none";
         modalVideo.style.display = "block";
         modalVideo.src = this.querySelector("source").src;
+        modalTitle.textContent = this.getAttribute("data-title");
+        modalDescription.textContent = this.getAttribute("data-description");
     });
 });
 
