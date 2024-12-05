@@ -147,6 +147,7 @@ footer {
     display: none;
 }
 /* Modal styles */
+/* Modal styles */
 .modal {
     display: none; /* Hide the modal by default */
     position: fixed; /* Stay in place */
@@ -173,6 +174,10 @@ footer {
     max-width: 80%; /* Ensure the modal doesn't exceed 80% of the viewport width */
     max-height: 80%; /* Ensure the modal doesn't exceed 80% of the viewport height */
     box-sizing: border-box;
+    position: absolute; /* Use absolute positioning */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset by 50% of its size */
 }
 
 .modal-media {
