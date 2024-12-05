@@ -141,47 +141,69 @@ footer {
     color: white;
 }
 
-/* Modal styles - existing styles remain the same */
+/* Modal styles */
 .modal {
     display: none; /* Hide the modal by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
+    left: 0; /* Start from the left edge */
+    top: 0; /* Start from the top edge */
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+    background-color: rgba(0, 0, 0, 0.9); /* Black with opacity */
+    display: flex; /* Use flexbox for centering */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
 }
 
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    max-height: 80vh; /* Ensure the modal content does not exceed 80% of the viewport height */
+.modal-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 80%; /* Ensure the modal doesn't exceed 80% of the viewport width */
+    max-height: 80%; /* Ensure the modal doesn't exceed 80% of the viewport height */
+    box-sizing: border-box;
+}
+
+.modal-content, #modal-video {
+    margin: 10px;
+    width: 45%;
+    max-width: 300px;
+    max-height: 70vh; /* Ensure the modal content does not exceed 70% of the viewport height */
     object-fit: contain; /* Maintain aspect ratio */
 }
 
-#modal-video {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    max-height: 80vh; /* Ensure the modal content does not exceed 80% of the viewport height */
-    object-fit: contain; /* Maintain aspect ratio */
+.modal-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    width: 45%;
+    max-width: 300px; /* Ensure the text box doesn't exceed 300px */
+}
+
+.modal-text h2 {
+    margin-bottom: 10px;
+}
+
+.modal-text p {
+    margin-bottom: 0;
 }
 
 /* Add Animation - Zoom in the Modal */
-.modal-content {
+.modal-content-wrapper {
     animation-name: zoom;
     animation-duration: 0.6s;
 }
 
 @keyframes zoom {
-    from {transform: scale(0)}
-    to {transform: scale(1)}
+    from { transform: scale(0); }
+    to { transform: scale(1); }
 }
 
 /* The Close Button */
