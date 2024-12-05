@@ -170,21 +170,27 @@ footer {
     box-sizing: border-box;
 }
 
+.modal-media {
+    flex: 3; /* Allocate more space to media content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .modal-content, #modal-video {
     margin: 10px;
-    width: 45%;
-    max-width: 300px;
+    width: 100%;
+    max-width: 600px;
     max-height: 70vh; /* Ensure the modal content does not exceed 70% of the viewport height */
     object-fit: contain; /* Maintain aspect ratio */
 }
 
 .modal-text {
+    flex: 1; /* Allocate less space to text content */
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 10px;
-    width: 45%;
-    max-width: 300px; /* Ensure the text box doesn't exceed 300px */
 }
 
 .modal-text h2 {
