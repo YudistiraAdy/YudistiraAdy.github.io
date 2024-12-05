@@ -168,7 +168,7 @@ footer {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    width: 90%; /* Ubah max-width menjadi width */
+    width: 70%; /* Ubah max-width menjadi width */
     max-width: none; /* Hilangkan batasan lebar maksimal */
     max-height: 90%;
     box-sizing: border-box;
