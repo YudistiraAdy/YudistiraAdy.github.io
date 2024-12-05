@@ -4,12 +4,12 @@ body {
     margin: 0;
     padding: 0;
     text-align: center;
+    background-color: #121212; /* Latar belakang gelap */
+    color: #ffffff; /* Teks warna terang */
 }
 
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
+header, footer {
+    background-color: #1f1f1f; /* Warna gelap untuk header dan footer */
 }
 
 header h1 {
@@ -25,7 +25,7 @@ nav ul {
 }
 
 nav ul li a {
-    color: white;
+    color: #ffffff; /* Warna teks putih untuk link navigasi */
     text-decoration: none;
 }
 
@@ -60,6 +60,8 @@ section h2 {
     max-width: calc(33.33% - 15px); /* Membatasi ukuran max width */
     aspect-ratio: 4 / 3; /* Untuk Gallery, rasio 4:3 */
     overflow: hidden; /* Pastikan konten yang melampaui batas tidak terlihat */
+    border-radius: 20px; /* Tambahkan border radius */
+    border: 1px solid #ccc; /* Tambahkan border jika diperlukan */
 }
 
 .gallery-grid .gallery-item img {
@@ -86,7 +88,7 @@ section h2 {
     aspect-ratio: 1; /* Untuk Projects, memastikan rasio 1:1 */
     object-fit: cover; /* Crop gambar agar sesuai dengan rasio */
     box-sizing: border-box; /* Memastikan padding tidak memengaruhi ukuran */
-    border-radius: 5px;
+    border-radius: 20px; /* Tambahkan border radius */
     border: 1px solid #ccc;
 }
 
@@ -105,7 +107,7 @@ section h2 {
     aspect-ratio: 4 / 3; /* Untuk Videos, rasio 4:3 */
     object-fit: cover; /* Crop video agar sesuai dengan rasio */
     box-sizing: border-box; /* Memastikan padding tidak memengaruhi ukuran */
-    border-radius: 5px;
+    border-radius: 20px; /* Tambahkan border radius */
     border: 1px solid #ccc;
 }
 
@@ -144,6 +146,7 @@ footer {
 #modal {
     display: none;
 }
+
 /* Modal styles */
 .modal {
     display: none; /* Hide the modal by default */
@@ -165,9 +168,9 @@ footer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: white;
+    background-color: #1f1f1f; /* Ubah latar belakang modal menjadi gelap */
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px; /* Tambahkan border radius */
     width: 70%; /* Ubah max-width menjadi width */
     max-width: none; /* Hilangkan batasan lebar maksimal */
     max-height: 90%;
