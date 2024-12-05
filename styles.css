@@ -171,8 +171,8 @@ footer {
     background-color: white;
     padding: 20px;
     border-radius: 10px;
-    max-width: 80%; /* Ensure the modal doesn't exceed 80% of the viewport width */
-    max-height: 80%; /* Ensure the modal doesn't exceed 80% of the viewport height */
+    max-width: 90%; /* Increase to 90% of the viewport width */
+    max-height: 90%; /* Increase to 90% of the viewport height */
     box-sizing: border-box;
     position: absolute; /* Use absolute positioning */
     top: 50%; /* Center vertically */
@@ -181,17 +181,17 @@ footer {
     overflow: hidden; /* Ensure content stays within the wrapper */
 }
 
+.modal-content, #modal-video {
+    margin: 10px;
+    max-width: 80%; /* Increase to 80% of the available width */
+    max-height: 80vh; /* Increase to 80% of the viewport height */
+    object-fit: contain; /* Maintain aspect ratio */
+}
+
 .modal-media {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.modal-content, #modal-video {
-    margin: 10px;
-    max-width: 300px; /* Ensure the content has a fixed size */
-    max-height: 70vh; /* Ensure the modal content does not exceed 70% of the viewport height */
-    object-fit: contain; /* Maintain aspect ratio */
 }
 
 .modal-text {
