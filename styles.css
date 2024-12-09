@@ -10,7 +10,7 @@ body {
 
 h2 {
     margin-bottom: 10px;
-    margin-top: 80px;
+	margin-top: 80px;
 }
 p {
     margin-top: 0px;
@@ -103,16 +103,6 @@ section {
     padding: 0 10px; /* Memberikan sedikit padding ke kontainer */
 }
 
-.image-container {
-    display: flex;
-    align-items: flex-start;
-    margin: 10px;
-}
-
-.image-container img {
-    margin-right: 10px;
-}
-
 .image-grid img {
     flex: 1 1 calc(33.33% - 15px); /* 3 konten per baris */
     max-width: calc(33.33% - 15px); /* Membatasi ukuran max width */
@@ -121,15 +111,6 @@ section {
     box-sizing: border-box; /* Memastikan padding tidak memengaruhi ukuran */
     border-radius: 20px; /* Tambahkan border radius */
     border: 1px solid #ccc;
-}
-
-.title {
-    flex: 1;
-    align-self: flex-start;
-    font-size: 14px;
-    padding: 5px;
-    background-color: rgba(0, 0, 0, 0.1);
-    color: black;
 }
 
 /* Flex container for Videos */
@@ -160,8 +141,8 @@ section {
 }
 
 #skills .icon-grid img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
 }
 
@@ -233,7 +214,7 @@ footer {
 }
 
 .modal-text p {
-    text-align: justify; /* Add this line */
+	text-align: justify; /* Add this line */
 }
 
 .modal-content, #modal-video {
