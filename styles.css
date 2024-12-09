@@ -168,6 +168,7 @@ section {
         text-align: center; /* Center align text */
         overflow-y: scroll; /* Allow scrolling */
         max-height: 40vh; /* Ensure text is scrollable */
+        color: #ffffff; /* Ensure text color is visible */
     }
 }
 
@@ -224,6 +225,7 @@ footer {
     max-width: none; /* Remove max-width limit */
     box-sizing: border-box;
     overflow-y: auto; /* Allow scrolling */
+    color: #ffffff; /* Ensure text color is visible */
 }
 
 .modal-text p {
