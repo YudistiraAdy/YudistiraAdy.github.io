@@ -322,11 +322,15 @@ footer {
 
 .image-container {
     position: relative;
+    flex: 1 1 calc(33.33% - 15px); /* 3 items per row */
+    max-width: calc(33.33% - 15px); /* Limit max width */
+    box-sizing: border-box; /* Ensure padding doesn't affect size */
+    margin-bottom: 15px; /* Add margin between rows */
 }
 
 .image-title {
     position: absolute;
-    top: -30px; /* Adjust as needed */
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.7);
@@ -338,6 +342,5 @@ footer {
 }
 
 .image-container:hover .image-title {
-    top: 0;
     opacity: 1;
 }
