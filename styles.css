@@ -319,34 +319,3 @@ footer {
     top: 50%;
     transform: translateY(-50%);
 }
-
-/* CSS for displaying title inside the box on hover */
-.image-grid img::after,
-.gallery-grid .gallery-item::after {
-    content: attr(data-title);
-    position: absolute;
-    bottom: 0; /* Position at the bottom inside the box */
-    left: 0;
-    width: 100%; /* Take full width */
-    background-color: rgba(0, 0, 0, 0.75);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 0 0 20px 20px; /* Match the image border radius */
-    white-space: nowrap;
-    z-index: 10;
-    display: none; /* Hide by default */
-    text-align: center; /* Center the text */
-}
-
-.image-grid img:hover::after,
-.gallery-grid .gallery-item:hover::after {
-    display: block; /* Show on hover */
-}
-
-.image-grid {
-    position: relative;
-}
-
-.gallery-grid .gallery-item {
-    position: relative;
-}
