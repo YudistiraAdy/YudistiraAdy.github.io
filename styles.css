@@ -320,3 +320,34 @@ footer {
     transform: translateY(-50%);
 }
 
+/* CSS for displaying title on hover */
+.image-grid img:hover::after,
+.gallery-grid .gallery-item:hover::after {
+    content: attr(data-title);
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.image-grid {
+    position: relative;
+}
+
+.image-grid img:hover::after {
+    display: block;
+}
+
+.gallery-grid .gallery-item {
+    position: relative;
+}
+
+.gallery-grid .gallery-item:hover::after {
+    display: block;
+}
