@@ -45,7 +45,7 @@ function openModal(content, index, section) {
 }
 
 // Add event listener to all images in projects, achievements, and gallery sections
-var images = document.querySelectorAll("#projects img, #achievements img, #gallery img"); // Add #achievements img
+var images = document.querySelectorAll("#projects img, #achievements img, #gallery img");
 images.forEach((img, index) => {
     img.addEventListener("click", function() {
         openModal(this, index, img.closest("section").id);
@@ -95,4 +95,31 @@ document.addEventListener("keydown", function(event) {
             showNext();
         }
     }
+});
+
+// Function to show title on hover
+function showTitleOnHover(event) {
+    var title = event.target.getAttribute("data-title");
+    var hoverTitle = document.createElement("div");
+    hoverTitle.className = "hover-title";
+    hoverTitle.textContent = title;
+    document.body.appendChild(hoverTitle);
+
+    hoverTitle.style.left = event.pageX + "px";
+    hoverTitle.style.top = event.pageY + "px";
+}
+
+// Function to remove title on hover out
+function removeTitleOnHoverOut() {
+    var hoverTitle = document.querySelector(".hover-title");
+    if (hoverTitle) {
+        hoverTitle.remove();
+    }
+}
+
+// Add hover event listeners to images
+images.forEach((img) => {
+    img.addEventListener("mouseover", showTitleOnHover);
+    img.addEventListener("mousemove", showTitleOnHover); // Update position
+    img.addEventListener("mouseout", removeTitleOnHoverOut);
 });
