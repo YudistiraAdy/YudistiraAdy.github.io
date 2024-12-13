@@ -321,8 +321,8 @@ footer {
 }
 
 /* CSS for displaying title on hover */
-.image-grid img:hover::after,
-.gallery-grid .gallery-item:hover::after {
+.image-grid img::after,
+.gallery-grid .gallery-item::after {
     content: attr(data-title);
     position: absolute;
     bottom: 10px;
@@ -334,20 +334,18 @@ footer {
     border-radius: 5px;
     white-space: nowrap;
     z-index: 10;
+    display: none; /* Hide by default */
+}
+
+.image-grid img:hover::after,
+.gallery-grid .gallery-item:hover::after {
+    display: block; /* Show on hover */
 }
 
 .image-grid {
     position: relative;
 }
 
-.image-grid img:hover::after {
-    display: block;
-}
-
 .gallery-grid .gallery-item {
     position: relative;
-}
-
-.gallery-grid .gallery-item:hover::after {
-    display: block;
 }
